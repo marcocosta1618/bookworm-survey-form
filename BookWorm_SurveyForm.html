@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="BookWorm_SurveyForm.css">
+    <title>BookWorm-SurveyForm</title>
+</head>
+
+<body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script> -->
+
+    <div id="main-container" class="white-text">
+
+        <div id="intro">
+            <h1 id="title">The Bookworm.com member survey</h1>
+            <p id="description" class="black-text">Thank you, this survey will help us to continue improving our
+                favorite place to buy books online!</p>
+        </div>
+
+        <div id="form-container">
+
+            <form id="survey-form">
+
+                <div id="personal-data">
+
+                    <div class="personal-data-div">
+                        <label id="name-label" for="name">Name</label>
+                        <input id="name" type="text" name="name" placeholder="your Name" required>
+                    </div>
+
+                    <div class="personal-data-div">
+                        <label id="email-label" for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="your Email" required>
+                    </div>
+
+                    <div class="personal-data-div">
+                        <label id="number-label" for="number">Age</label>
+                        <input id="number" type="number" min="6" max="100" name="age" placeholder="your age">
+                    </div>
+
+                </div> <!-- end of personal-data div -->
+
+                <div>
+                    <p>How many books do you read in a year, on average?</p>
+                    <select id="dropdown" name="books-number" required>
+                        <option disabled selected value>Please choose one option</option>
+                        <option value="1-6">1 - 6</option>
+                        <option value="7-12">7 - 12</option>
+                        <option value="13-24">13 - 24</option>
+                        <option value="25+">25 +</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Where do you usually buy books?</p>
+                    <div id="buying-habits-div">
+                        <label>
+                            <input type="radio" name="buying-habits" value="Bookworm"> Bookworm.com
+                        </label>
+                        <label>
+                            <input type="radio" name="buying-habits" value="Bookworm+other(online)"> Bookworm.com and
+                            other online bookstores
+                        </label>
+                        <label>
+                            <input type="radio" name="buying-habits" value="Bookworm+other(online+physical)"> Bookworm,
+                            other online bookstores, and physical bookstores
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- categories checkboxes -->
+                    <p style="margin-bottom: -12px;">Which of the following categories would you like to be more
+                        represented in our store?</p>
+                    <p style="padding-bottom: 0px;">Fiction:</p>
+                    <div id="fiction-div">
+
+                        <label>
+                            <input type="checkbox" name="categories" value="classic"> Classic
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="crime/detective"> Crime/Detective
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="fantasy"> Fantasy
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="historical-fiction"> Historical fiction
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="horror"> Horror
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="humor"> Humor
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="romance"> Romance
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="science-fiction"> Science fiction
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="short-fiction"> Short fiction
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="suspense/thriller"> Suspense/Thriller
+                        </label>
+                    </div> <!-- end of fiction div-->
+                    <p style="padding-bottom: 0px;">Non-fiction:</p>
+                    <div id="non-fiction-div">
+                        <label>
+                            <input type="checkbox" name="categories" value="biography"> Biography
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="essay"> Essay
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="journalism"> Journalism
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="memoire"> Memoire
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="personal-narrative"> Personal narrative
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="reference-books"> Reference books
+                        </label>
+                        <label>
+                            <input type="checkbox" name="categories" value="self-help"> Self-help
+                        </label>
+                    </div> <!-- end of non-fiction div -->
+                </div> <!-- end of categories checkboxes div -->
+
+                <div>
+                    <!-- additional comment -->
+                    <p style="margin-top: 28px;">Feel free to add any suggestion or comment!</p>
+                    <textarea cols="8" rows="8" placeholder="your comment here"></textarea>
+                </div>
+
+                <div id="button-div"><button id="submit" type="submit">Submit</button></div>
+
+            </form>
+        </div> <!-- end of form container div -->
+    </div> <!-- end of main-container div -->
+
+</body>
+
+</html>

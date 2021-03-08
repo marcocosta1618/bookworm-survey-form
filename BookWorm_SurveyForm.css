@@ -1,0 +1,163 @@
+body {
+  font-family: "Lato", Arial;
+  background: linear-gradient(0deg, #ff9200, #6c6cf2);
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main-container {
+  background-color: rgba(200, 200, 237, 0.5);
+  margin: -1.35rem -0.48rem -0.5rem;
+  padding: 1.5rem;
+}
+
+.white-text {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.black-text {
+  color: #333333;
+  text-shadow: 1px 2px 4px white;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 700;
+  padding: 4px 0px 8px;
+  margin: 10px 0px 2px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#intro {
+  text-align: center;
+}
+
+#description {
+  padding: 0px 0px 14px;
+  margin: 10px 0px 2px;
+}
+
+p {
+  font-size: 1rem;
+  padding: 4px 0px 8px;
+  margin: 10px 0px 2px;
+}
+
+#form-container {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  padding: 2rem 2rem;
+}
+
+#personal-data {
+  padding-bottom: 20px;
+  margin-left: -10px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.personal-data-div {
+  padding: 5px 10px;
+  padding-bottom: 5px;
+  width: 12rem;
+}
+
+[type="text"],
+[type="email"],
+[type="number"] {
+  margin-top: 2px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+#name,
+#email,
+#number {
+  width: 100%;
+}
+
+
+#buying-habits-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+
+#dropdown {
+  width: 190px;
+  font-size: 0.83rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 414px) {
+  #dropdown {
+    width: 176px;
+  }
+}
+@media (max-width: 220px) {
+  #dropdown {
+    width: 100%;
+  }
+}
+
+#fiction-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#non-fiction-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  margin: auto;
+  text-indent: 4px;
+}
+
+:placeholder-shown {
+  font-style: italic;
+}
+
+#button-div {
+  padding-top: 30px;
+}
+#submit {
+  font-family: inherit;
+  font-size: 1.05rem;
+  display: block;
+  margin: auto;
+  padding: 0px 16px;
+  border-radius: 6px;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 414px) {
+  #main-container {
+    margin: -1.35rem -1.5rem -0.5rem;
+  }
+  #form-container {
+    padding: 2rem 1rem;
+  }
+  :root {
+    font-size: 0.9rem;
+  }
+}
