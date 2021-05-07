@@ -4,7 +4,7 @@ An imaginary book-store survey form coded for the [freeCodeCamp](https://www.fre
 
 Second out of five projects revolving around Responsive Web Design principles and user input HTML elements.
 
-This page is [hosted on GitHub Pages](https://marcocosta1618.github.io).
+This page is [hosted on GitHub Pages](https://marcocosta1618.github.io/bookworm-survey-form/).
 
 ---
 
